@@ -1,7 +1,7 @@
-object InstallerForm: TInstallerForm
+object MyForm: TMyForm
   Left = 0
   Top = 0
-  Caption = 'InstallerForm'
+  Caption = 'MyForm'
   ClientHeight = 299
   ClientWidth = 635
   Color = clBtnFace
@@ -11,12 +11,11 @@ object InstallerForm: TInstallerForm
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object Label1: TLabel
-    Left = 225
-    Top = 110
+  object labelHello: TLabel
+    Left = 240
+    Top = 120
     Width = 146
     Height = 33
     Caption = 'Hello World!'

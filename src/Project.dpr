@@ -1,16 +1,16 @@
-program Project_GO_Installer;
+program Project;
 
 uses
   madExcept,
   Vcl.Forms,
-  Installer in 'Installer.pas' {InstallerForm};
+  MainForm in 'MainForm.pas' {MyForm};
 
 {$r *.res}
 
 
 begin
   Application.Initialize;
-  Application.CreateForm(TInstallerForm, InstallerForm);
+  Application.CreateForm(TMyForm, MyForm);
   Application.MainFormOnTaskbar := True;
   Application.Run;
 end.

@@ -1,4 +1,4 @@
-unit Installer;
+unit MainForm;
 
 interface
 
@@ -7,9 +7,8 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TInstallerForm = class(TForm)
-    Label1: TLabel;
-    procedure FormCreate(Sender: TObject);
+  TMyForm = class(TForm)
+    labelHello: TLabel;
   private
     { Private declarations }
   public
@@ -17,16 +16,11 @@ type
   end;
 
 var
-  InstallerForm: TInstallerForm;
+  MyForm: TMyForm;
 
 implementation
 
 {$r *.dfm}
 
-
-procedure TInstallerForm.FormCreate(Sender: TObject);
-begin
-  raise Exception.Create('Error Message');
-end;
 
 end.
