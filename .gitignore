@@ -26,6 +26,12 @@
 #*.obj
 #
 
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.dsk
+
 # Delphi compiler-generated binaries (safe to delete)
 src/*.exe
 #!src/assets/*.exe

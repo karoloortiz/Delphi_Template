@@ -1,7 +1,6 @@
 program ProjectTest;
 
 uses
-  madExcept,
   Vcl.Forms,
   TestUnit in 'TestUnit.pas' {Form1};
 
@@ -12,4 +11,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TForm1, Form1);
   Application.Run;
+
 end.
