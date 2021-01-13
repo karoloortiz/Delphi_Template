@@ -4,9 +4,13 @@ uses
   Vcl.Forms,
   MainForm in 'MainForm.pas' {MyForm};
 
-{$R *.res}
+{$r *.res}
+
 
 begin
+{$ifdef DEBUG}
+  ReportMemoryLeaksOnShutdown := true;
+{$endif}
   Application.Initialize;
   Application.CreateForm(TMyForm, MyForm);
   Application.MainFormOnTaskbar := True;
