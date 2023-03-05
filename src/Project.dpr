@@ -2,7 +2,7 @@ program Project;
 
 uses
   Vcl.Forms,
-  MainForm in 'MainForm.pas' {MyForm};
+  App.MainForm in 'App\App.MainForm.pas' {MyForm};
 
 {$r *.res}
 
