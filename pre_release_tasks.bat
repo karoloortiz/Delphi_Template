@@ -1,5 +1,5 @@
 @echo off
-set "OUTPUTNAME=Project_GO_Installer"
+set "OUTPUTNAME=Project"
 	del .\exe\%OUTPUTNAME%.map
 	del .\exe\%OUTPUTNAME%.drc
 	del .\exe\bugreport.txt
