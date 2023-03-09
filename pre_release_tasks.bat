@@ -1,6 +1,12 @@
 @echo off
 set "OUTPUTNAME=Project"
-	del .\exe\%OUTPUTNAME%.map
-	del .\exe\%OUTPUTNAME%.drc
-	del .\exe\bugreport.txt
+	IF EXIST "..\release\exe\%OUTPUTNAME%.map" (
+		del "..\release\exe\%OUTPUTNAME%.map"
+	)
+	IF EXIST "..\release\exe\%OUTPUTNAME%.drc" (
+		del "..\release\exe\%OUTPUTNAME%.drc"
+	)
+	IF EXIST "..\release\exe\bugreport.txt" (
+		del "..\release\exe\bugreport.txt"
+	)
 exit

@@ -82,8 +82,8 @@ dcu/*
 debug-exe/*
 !debug-exe/.gitkeep
 
-exe/*
-!exe/.gitkeep
+release/*
+!release/.gitkeep
 
 build-info/*
 !build-info/.gitkeep
